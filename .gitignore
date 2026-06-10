@@ -1,0 +1,56 @@
+# Flutter / Dart
+
+**/.dart_tool/
+**/.pub-cache/
+**/.pub/
+**/build/
+**/coverage/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+
+# Android - file locali e generati
+
+**/android/.gradle/
+**/android/local.properties
+**/android/key.properties
+**/*.jks
+**/*.keystore
+
+# iOS / macOS
+
+**/ios/Pods/
+**/macos/Pods/
+**/DerivedData/
+
+# IDE
+
+**/.idea/
+**/*.iml
+**/.vscode/
+
+# Obsidian - mantieni configurazione, escludi stato locale
+
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+.obsidian/cache/
+.trash/
+
+# File contenenti segreti
+
+**/.env
+**/.env.*
+!**/.env.example
+
+# File di sistema Windows e macOS
+
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# File temporanei
+
+*.tmp
+*.log
+*~
