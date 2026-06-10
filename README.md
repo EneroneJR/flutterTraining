@@ -56,14 +56,14 @@ e
 _$AppDatabase
 ```
 
-ma il `.g.dart` non deve esser creato Manualmente -> [[#Creare il g.dart]].
+ma il `.g.dart` non deve esser creato Manualmente -> [Creare il g.dart](#Creare%20il%20g.dart).
 
-Le tabelle ed il codice ispirate al tracker spese si trova in -> [[trackerTable]]
+Le tabelle ed il codice ispirate al tracker spese si trova in -> [trackerTable](trackerTable.md).
 
 # Database Dart
 OBJ: Spiegare poi i vari elementi.
-[[Presentazione Dart e Flutter]].
-[[Sintassi Dart]].
+[Presentazione Dart e Flutter](Presentazione%20Dart%20e%20Flutter.md).
+[Sintassi Dart](Sintassi%20Dart.md).
 # Creare il g.dart
 
 Drift (il tipo di database che stiamo usando), lo genererà una volta scritto tutte le tabelle e codice entità.
@@ -91,7 +91,7 @@ final AppDatabase database = AppDatabase();
 È consigliabile avere un istanza unica così da non aprire un database ad ogni nuova schermata.
 
 # Colleghiamolo per test al Main.
-Giusto per verificare che il DB sia funzionante e sistemato risaliamo a `lib/main.dart` e colleghiamolo. Temporaneamente potremmo inserire questo [[codiceMainTest]].
+Giusto per verificare che il DB sia funzionante e sistemato risaliamo a `lib/main.dart` e colleghiamolo. Temporaneamente potremmo inserire questo [codiceMainTest](codiceMainTest.md).
 
 
 # Creiamo il modulo dei "Movimenti"
@@ -101,27 +101,27 @@ Usiamo quindi la cartella "Features", alla quale dentro inseriremo "transactions
 
 NB: Ricorda anche ci servirà la cartella `utils` così da avere anche `lib/core/utils/money_utils.dart`.
 
-Dentro al quale inserirai il codice [[codiceMoneyUtils]].
+Dentro al quale inserirai il codice [codiceMoneyUtils](codiceMoneyUtils.md).
 
-Poi `lib/core/utils/date_utils.dart`. -> [[codiceDateUtils]]. 
+Poi `lib/core/utils/date_utils.dart`. -> [codiceDateUtils](codiceDateUtils.md). 
 
-Ed infine creiamo la repository dei movimenti. -> [[codiceTransactionRepo]].
+Ed infine creiamo la repository dei movimenti. -> [codiceTransactionRepo](codiceTransactionRepo.md).
 ## Infine Penseremo al form di Inserimento e modifica
 Questo tipo di form usa un globalKey `GlobalKey<FormState>` e `TextEditingController`. Questa struttura serve per raggruppare e validare i campi prima del Salvataggio. I Controller devono essere liberati con `dispose()`.
 
 percorso: `lib/feature/transactions/presentation/transaction_form_page.dart`
 
-[[codiceTransactionFormPage]].
+[codiceTransactionFormPage](codiceTransactionFormPage.md).
 
 e si finisce con: `lib/feature/transactions/presentation/transaction_page.dart`
 
-[[codiceTrasactionPage]].
+[codiceTrasactionPage](codiceTrasactionPage.md).
 
 La schermata viene aperta e chiusa con Navigator. `push()` o `pop()`.
 
 ## Da qui, Modifichiamo di nuovo il Main
 
-[[codiceMainMovimenti]].
+[codiceMainMovimenti](codiceMainMovimenti.md).
 
 # Test
 Potremmo tranquillamente runnare e controllare, ma se vogliamo controllare il codice prima di eseguirlo:
@@ -160,7 +160,7 @@ Il test predefinito creato automaticamente dal progetto Flutter iniziale si chia
 
 Quindi Flutter cerca il vecchio, non il nuovo.
 
-In: `test\widget_test.dart` può esser cambiato in: [[oldWidgetTestChange]].
+In: `test\widget_test.dart` può esser cambiato in: [oldWidgetTestChange](oldWidgetTestChange.md).
 
 Per esser sicuri che il nome del package sia giusto, si può controllare nel `pubspec.yaml`.
 
