@@ -56,7 +56,7 @@ e
 _$AppDatabase
 ```
 
-ma il `.g.dart` non deve esser creato Manualmente -> [[#Creare il g.dart]].
+ma il `.g.dart` non deve esser creato Manualmente -> [Creare il g.dart](#Creare il g.dart).
 
 Le tabelle ed il codice ispirate al tracker spese si trova in -> [[trackerTable]]
 
