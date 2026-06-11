@@ -31,7 +31,7 @@ class AppSettings extends Table {
     const Constant(540000),
   )();
 
-  late final periodStartDay = integer().withDefault(const Constant(1))();
+  late final periodStartDay = integer().withDefault(const Constant(15))();
 
   late final referenceYear = integer().withDefault(const Constant(2026))();
 
@@ -226,7 +226,7 @@ class AppDatabase extends _$AppDatabase {
             monthlySalaryCents: Value(140000),
             monthlySavingsTargetCents: Value(100000),
             initialSavingsCents: Value(540000),
-            periodStartDay: Value(1),
+            periodStartDay: Value(15),
             referenceYear: Value(2026),
           ),
         );

@@ -63,7 +63,7 @@ class $AppSettingsTable extends AppSettings
     false,
     type: DriftSqlType.int,
     requiredDuringInsert: false,
-    defaultValue: const Constant(1),
+    defaultValue: const Constant(15),
   );
   static const VerificationMeta _referenceYearMeta = const VerificationMeta(
     'referenceYear',

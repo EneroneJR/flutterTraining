@@ -146,3 +146,30 @@ Text(
 	textAlign: TextAlign.center,
 )
 ```
+
+`textAlign` è un parametro nominato.
+
+in una funzione personalizzata:
+
+```dart
+void creaUtente({
+	required String nome,
+	required int eta,
+})
+{
+//codice
+}
+```
+
+Utilizzo:
+
+```dart
+creaUtente(
+  nome: 'Mario',
+  eta: 30,
+);
+```
+
+`required` significa che il parametro è obbligatorio.
+
+Letto questo -> [DataBase (definire le Tabelle)](DataBase%20(definire%20le%20Tabelle).md).
